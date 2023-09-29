@@ -1,4 +1,21 @@
-
+.invalid-input{
+  border: 2px solid red;
+}
+#notiEmail{
+  position: relative;
+  color: red !important;
+  position: absolute;
+  font-size: 70% !important;
+}
+.notifications {
+    list-style-type: none;
+    border: #dadad4;
+    position: fixed;
+    right: 5px;
+    border-radius: 3px;
+    padding: 20px;
+    font-size: small;
+}
 .header {
   z-index: 1000;
   position: fixed;
@@ -18,7 +35,7 @@
 }
 #button {
   display: inline-block;
-  background-color: #FF9800;
+  background-color: #ab7fdb;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -26,13 +43,13 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
-  transition: background-color .9s, opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
   border-color: transparent;
 }
 #button:hover {
+  transition: background-color .9s, opacity .5s, visibility .5s;
   cursor: pointer;
   background: var(--main-primary-hover, #6B42FF); /* Change background color on hover */
   color: var(--main-white-hover, #FFF); /* Change text color on hover */
@@ -1145,6 +1162,9 @@ border-color: transparent;
   font-style: var(--14-regular-font-style);
 }
 
+#inputEmail {
+  position: relative;
+}
 .input-2 {
   display: flex;
   height: 48px;
@@ -1177,22 +1197,58 @@ border-color: transparent;
   padding: 0;
 }
 
-
+#btn3:hover {
+  cursor: pointer;
+  background: var(--main-primary-hover, #6B42FF); /* Change background color on hover */
+  color: var(--main-white-hover, #FFF); /* Change text color on hover */
+}
 .primary-button-3 {
   display: flex;
-width: 232px;
-height: 48px;
-padding: 12px 24px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border-radius: 8px;
-background: var(--main-primary, #8053FF);
-border-color: transparent;
+  width: 232px;
+  height: 48px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--main-primary, #8053FF);
+  border-color: transparent;
 
 }
-
-
+.notifications{
+  margin-top: 20px;
+  z-index:2000;
+  border: #dadad4;
+  position: fixed;
+  right: 5px;
+  border-radius: 3px;
+  padding: 20px;
+  font-size: small;
+}
+.toast{
+  font-family: sans-serif;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.toast.success{
+  background-color: #1ff24d;
+}
+.toast.proName{
+  background-color: red;
+}
+.toast.tele{
+  background-color: red;
+}
+.toast.proDes{
+  background-color: red;
+}
+.toast.emailFormat{
+  background-color: red;
+}
+.toast.email{
+  background-color: red;
+}
 .col-5 {
   display: flex;
   flex-direction: column;

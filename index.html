@@ -9,7 +9,15 @@
     <link rel="icon" href="/img/logo-1-1.png" type="image/x-icon">
   </head>
   <body>
-      <button id="button" onclick="scrollTop()"><i class="fa-solid fa-arrows-up-to-line fa-2x"></i></button>
+
+      <!-- scrollTop -->
+      <button id="button"><i class="fa-solid fa-arrows-up-to-line fa-2x"></i></button>
+      
+
+      <!-- toast -->
+      <ul class="notifications"></ul> 
+
+      <!-- header -->
       <header class="header">
         <div class="container">
           <div class="logo">
@@ -25,6 +33,9 @@
           </div>
         </div>
       </header>
+
+
+
       <div class="section">
         <div class="container-2">
           <img class="bg" src="img/bg-3.png" />
@@ -352,25 +363,26 @@
                 <div class="col-4">
                   <div class="input">
                     <p class="label">How is your project called?</p>
-                    <input class="input-2"></input>
+                    <input class="input-2" id="inputProject" placeholder="Name.."></input>
                   </div>
                   <div class="input">
                     <p class="label">Please tell us a few words about the project</p>
-                    <input class="input-2"></input>
+                    <input class="input-2" id="inputProDes" placeholder="Something..."></input>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="input">
                     <p class="label">Your Email</p>
-                    <input class="input-2" placeholder="Your Email" type="email"></input>
+                    <input class="input-2" id="inputEmail" placeholder="Your Email" type="email"></input>
                   </div>
+                  <div id="notiEmail"></div>
                   <div class="input">
                     <p class="label">Telegram name</p>
-                    <input class="input-2" placeholder="Tele" type="email"></input>
+                    <input class="input-2" placeholder="Tele" type="name" id="inputTele"></input>
                   </div>
                 </div>
               </div>
-                <button class="primary-button-3" id="btn"><div class="div">Send</div></button>
+                <button class="primary-button-3" id="btn3"><div class="div">Send</div></button>
             </div>
           </div>
           <div class="col-5">
