@@ -33,6 +33,15 @@
   background: var(--main-primary-hover, #6B42FF); /* Change background color on hover */
   color: var(--main-white-hover, #FFF); /* Change text color on hover */
 }
+#btn2:hover{
+  cursor: pointer;
+  background: var(--main-primary-hover, #7e6fb4); /* Change background color on hover */
+  color: var(--main-white-hover, #FFF); /* Change text color on hover */
+}
+#btn2:active {
+  background: var(--main-primary-active, #4A2FCC); /* Change background color on click */
+  color: var(--main-white-active, #FFF); /* Change text color on click */
+}
 #button {
   display: inline-block;
   background-color: #ab7fdb;
@@ -309,15 +318,18 @@
 
 
 .secondary-button {
-  display: flex;
-width: 232px;
-padding: 12px 24px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border-radius: 8px;
-border: 1px solid var(--main-primary, #8053FF);
-background: var(--main-white, #FFF);
+  color: var(--main-primary, #8053FF);
+  font-family: "Poppins", Helvetica;
+  font-size: 18px;
+  line-height: 36px; /* 200% */
+  width: 232px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--main-primary, #8053FF);
+  background: var(--main-white, #FFF);
 
 }
 
@@ -334,14 +346,12 @@ background: var(--main-white, #FFF);
 }
 .placeholder-3 {
   color: var(--main-primary, #8053FF);
-font-family: Poppins;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: 36px; /* 200% */
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 200% */
 }
-
-
 .container-wrapper {
   flex-direction: column;
   display: flex;
@@ -839,7 +849,7 @@ border-color: transparent;
   position: relative;
   background-color: var(--mainprimary);
   border-radius: 8px;
-border-color: transparent;
+  border-color: transparent;
 
 }
 
@@ -1029,6 +1039,7 @@ border-color: transparent;
   left: 0;
   position: absolute;
   top: 0;
+  opacity: 25%;
 }
 
 
@@ -1202,6 +1213,7 @@ border-color: transparent;
   background: var(--main-primary-hover, #6B42FF); /* Change background color on hover */
   color: var(--main-white-hover, #FFF); /* Change text color on hover */
 }
+
 .primary-button-3 {
   display: flex;
   width: 232px;
@@ -1216,7 +1228,7 @@ border-color: transparent;
 
 }
 .notifications{
-  margin-top: 20px;
+  margin-top: 80px;
   z-index:2000;
   border: #dadad4;
   position: fixed;
@@ -1226,28 +1238,30 @@ border-color: transparent;
   font-size: small;
 }
 .toast{
-  font-family: sans-serif;
+  font-family: var(--titles-h2-font-family);
+    font-style: var(--titles-h2-font-style);
+    font-weight: var(--titles-h2-font-weight);
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 10px;
 }
 .toast.success{
-  background-color: #1ff24d;
+  background-color: #66b9e9;
 }
 .toast.proName{
-  background-color: red;
+  background-color: rgb(211, 90, 222);
 }
 .toast.tele{
-  background-color: red;
+  background-color: rgb(211, 90, 222);
 }
 .toast.proDes{
-  background-color: red;
+  background-color: rgb(211, 90, 222);
 }
 .toast.emailFormat{
-  background-color: red;
+  background-color: rgb(211, 90, 222);
 }
 .toast.email{
-  background-color: red;
+  background-color: rgb(211, 90, 222);
 }
 .col-5 {
   display: flex;

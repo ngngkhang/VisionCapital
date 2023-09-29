@@ -7,7 +7,7 @@ const button = document.getElementById('btn3');
 const notifications = document.querySelector('.notifications');
 
 const removeToast = (toast) => {
-    setTimeout(()=>toast.remove(),100000)
+    setTimeout(()=>toast.remove(),5000)
 };
 const toastDetails = {
     success: {
@@ -94,6 +94,50 @@ function showToast(status) {
     <span>${message}</span>
   </div>
 `;
+if(status ==="success") {
+    // Lấy ra biểu tượng đóng trong toast
+    const closeButton = toast.querySelector(".fa-check-circle");
+    // Thêm sự kiện click cho biểu tượng đóng
+    closeButton.addEventListener("click", () => {
+      toast.remove();
+    });}
+if(status ==="email") {
+    // Lấy ra biểu tượng đóng trong toast
+    const closeButton = toast.querySelector(".fa-times-circle");
+    // Thêm sự kiện click cho biểu tượng đóng
+    closeButton.addEventListener("click", () => {
+      toast.remove();
+    });}
+if(status ==="emailFormat") {
+        // Lấy ra biểu tượng đóng trong toast
+        const closeButton = toast.querySelector(".fa-times-circle");
+        // Thêm sự kiện click cho biểu tượng đóng
+        closeButton.addEventListener("click", () => {
+          toast.remove();
+        });}
+if(status ==="proName") {
+    // Lấy ra biểu tượng đóng trong toast
+    const closeButton = toast.querySelector(".fa-times-circle");
+    // Thêm sự kiện click cho biểu tượng đóng
+    closeButton.addEventListener("click", () => {
+      toast.remove();
+    });}
+
+    if(status ==="tele") {
+        // Lấy ra biểu tượng đóng trong toast
+        const closeButton = toast.querySelector(".fa-times-circle");
+        // Thêm sự kiện click cho biểu tượng đóng
+        closeButton.addEventListener("click", () => {
+          toast.remove();
+        });}
+
+        if(status ==="proDes") {
+            // Lấy ra biểu tượng đóng trong toast
+            const closeButton = toast.querySelector(".fa-times-circle");
+            // Thêm sự kiện click cho biểu tượng đóng
+            closeButton.addEventListener("click", () => {
+              toast.remove();
+            });}
     notifications.appendChild(toast);
     removeToast(toast);
 }
